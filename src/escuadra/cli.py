@@ -40,7 +40,7 @@ def main():
 
     args = parser.parse_args()
 
-    if args.herramienta is None:
+    if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(0)
 
